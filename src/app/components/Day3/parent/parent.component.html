@@ -1,0 +1,17 @@
+<div class="m-2 p-3 bg-light">
+  <!-- <h1>Parent Data</h1>
+    <p>my Data:  {{Data}}</p>
+    <hr>
+    <app-child [parentData]="Data"></app-child> -->
+
+  <!-- <h1> Parent Component</h1>
+    <p> child Data: {{childData}}</p>
+    <hr>
+    <app-child (myEvent)="getData($event)"></app-child>  -->
+
+  <h1>Parent</h1>
+
+  <app-source-child (myEvent)="getSourceData($event)"></app-source-child>
+    <p>Data from source in parent {{sourceChildData}}</p>
+  <app-target-child [fromSource]="sourceChildData"></app-target-child>
+</div>
